@@ -12,7 +12,57 @@ All endpoints require authentication using **Sanctum**. Include the `Authorizati
 ```
 Authorization: Bearer YOUR_ACCESS_TOKEN
 ```
+---
+## Register
+### **Endpoint**
+```
+POST /user/register
+```
+### **Body Parameters**
+| Field    | Type   | Required | Description      |
+|----------|--------|----------|------------------|
+| name     | string | ✅ Yes  | Name of  User    |
+| email    | string | ✅ Yes  | Email of  User   |
+| password | integer | ✅ Yes  | Password Of User |
 
+Response Body
+```json
+{
+    "user": {
+        "name": "Example",
+        "email": "example@gmail.com",
+        "updated_at": "2025-02-22T18:21:06.000000Z",
+        "created_at": "2025-02-22T18:21:06.000000Z",
+        "id": 1
+    },
+    "token": "1|LITqhTiTO0YVLkRR03VN8JVTCfV6nhPiq29g6wYA0a02db8c"
+}
+```
+---
+
+## Login
+### **Endpoint**
+```
+POST /user/login
+```
+### **Body Parameters**
+| Field    | Type   | Required | Description      |
+|----------|--------|----------|------------------|
+| email    | string | ✅ Yes  | Email of  User   |
+| password | integer | ✅ Yes  | Password Of User |
+
+```json
+{
+    "user": {
+        "name": "Example",
+        "email": "example@gmail.com",
+        "updated_at": "2025-02-22T18:21:06.000000Z",
+        "created_at": "2025-02-22T18:21:06.000000Z",
+        "id": 1
+    },
+    "token": "1|LITqhTiTO0YVLkRR03VN8JVTCfV6nhPiq29g6wYA0a02db8c"
+}
+```
 ---
 
 ## **1️⃣ Get All Orders**

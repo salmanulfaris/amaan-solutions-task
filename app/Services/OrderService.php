@@ -40,17 +40,6 @@ class OrderService
         });
     }
 
-    /**
-     * Clear cache when an order is created, updated, or deleted.
-     */
-    public function clearOrderCache(string $userId, string $orderId = null): void
-    {
-        Cache::forget("orders_user_{$userId}");
-        if ($orderId) {
-            Cache::forget("order_{$orderId}");
-        }
-    }
-
 
 
     /**
@@ -84,12 +73,10 @@ class OrderService
     /**
      * Update an order within a database transaction.
      *
-     * @param array $validatedData Validated data from the request.
+     * @param array $data
      * @param string $id The ID of the order to update.
      * @return Order
      * @throws AuthorizationException
-     * @throws ModelNotFoundException
-     * @throws Exception
      */
     public function updateOrder(array $data, string $id): Order
     {

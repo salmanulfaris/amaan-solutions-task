@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\Order\OrderCreateRequest;
 use App\Http\Requests\Order\OrderUpdateRequest;
-use App\Models\Order;
 use App\Services\OrderService;
 use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
