@@ -11,7 +11,7 @@
     <nav class="container mx-auto px-6 py-3">
         <div class="flex justify-between items-center">
             <div class="text-xl font-semibold text-gray-700">
-                <a href="#" class="text-blue-600 hover:text-blue-800">Amaan Solutions - Task</a>
+                <a href="#" class="text-blue-600 hover:text-blue-800">Amaan Solutions Task</a>
             </div>
             <div class="hidden md:flex items-center space-x-4">
                 <a href="#features" class="text-gray-600 hover:text-blue-600">Features</a>
@@ -123,6 +123,26 @@
                     <h3 class="text-xl font-semibold mb-2">Comprehensive Testing</h3>
                     <p class="text-gray-600">Thorough unit tests for the order module ensuring reliability and stability.</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- API Documentation Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-semibold text-center text-gray-800 mb-12">API Documentation</h2>
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h3 class="text-xl font-semibold mb-4">Available Endpoints</h3>
+                <ul class="list-disc list-inside space-y-2 text-gray-600 mb-6">
+                    <li>GET /api/order - Retrieve all orders</li>
+                    <li>POST /api/order - Create a new order</li>
+                    <li>GET /api/order/{id} - Retrieve a specific order</li>
+                    <li>PUT /api/order/{id} - Update an existing order</li>
+                    <li>DELETE /api/order/{id} - Delete an order</li>
+                    <li>GET /api/exchange-rate/{currencyCode} - Get exchange rates</li>
+                </ul>
+                <p class="text-gray-700 mb-4">Our API uses Sanctum for authentication and provides comprehensive error handling.</p>
+                <a href="https://github.com/salmanulfaris/amaan-solutions-task/blob/main/api-documentation.md/#order-api-documentation" class="inline-block bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition duration-300">View Full API Documentation</a>
             </div>
         </div>
     </section>

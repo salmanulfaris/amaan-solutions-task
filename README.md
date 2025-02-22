@@ -1,8 +1,8 @@
 ## **📖 Index**
 
 **[Task Overview](#task-overview)**  
-**[TODO List](#todo-list)**  
-**[API Documentation](./api-documentation.md/#order-api-documentation)**
+**[TODO List](#task-done-checklist)**  
+**[API Documentation](./api-documentation.md)**
 
 ### Task Overview
 
